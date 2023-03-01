@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class TrafficLight : MonoBehaviour
 {
-   
     [SerializeField] private float _timeToChange;
     private float _startTimeToChange;
     [SerializeField] private Material _standardMaterial;
