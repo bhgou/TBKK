@@ -6,7 +6,7 @@ public class MoveCars : MonoBehaviour
 {
     [SerializeField] private Car[] _cars;
     [SerializeField] private float _speed;
-    [SerializeField] private float _lifeTime;
+    [SerializeField] private TrafficLight _trafficLight;
 
     private void Start()
     {
@@ -16,19 +16,20 @@ public class MoveCars : MonoBehaviour
         }
     }
 
-    public float LifeTime{
-        get{
-            return _lifeTime;
-        }
-        set{
-            _lifeTime = value;
-        }
-    }
+
 
     private void Update() {
         foreach(Car car in _cars){
             car.Move();
-            if(car.LifeTime <= 0){
+            foreach (var color in _trafficLight.Colors)
+            {
+                if (color.IsActive && color.NameColor == "Green")
+                {
+                    car.Stop();
+                }
+                
+            }
+            if (car.LifeTime <= 0){
                 car.Die();
             }
         }

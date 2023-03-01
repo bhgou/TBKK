@@ -128,7 +128,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 7ac81489b2b617f4298202f3eb28944d, type: 3}
@@ -181,14 +180,12 @@ PrefabInstance:
         \u0447\u0430\u0441\u0442\u044C"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ac81489b2b617f4298202f3eb28944d, type: 3}
 --- !u!1001 &1456879622
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: fd3139f43d622e142b3c4bcaa04776d3, type: 3}
@@ -240,7 +237,6 @@ PrefabInstance:
       value: "\u0447\u0435\u043B\u043E\u0432\u0435\u0447\u0435\u043A"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: fd3139f43d622e142b3c4bcaa04776d3, type: 3}
 --- !u!1 &1860759904
 GameObject:
@@ -331,7 +327,6 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -341,7 +336,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b5c0185bc52c41448b9af0c815bf5e5f, type: 3}
@@ -394,7 +388,6 @@ PrefabInstance:
         \u0447\u0430\u0441\u0442\u044C"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: b5c0185bc52c41448b9af0c815bf5e5f, type: 3}
 --- !u!1 &2098754318
 GameObject:
@@ -475,7 +468,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
