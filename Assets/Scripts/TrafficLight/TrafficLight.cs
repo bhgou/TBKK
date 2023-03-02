@@ -15,7 +15,7 @@ public class TrafficLight : MonoBehaviour
     
     private void Start() {
         _startTimeToChange = _timeToChange;
-        _colors[0].SetColor();
+        _colors[1 ].SetColor();
     }
     
     private void Update() {

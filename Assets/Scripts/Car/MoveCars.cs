@@ -29,9 +29,7 @@ public class MoveCars : MonoBehaviour
                 }
                 
             }
-            if (car.LifeTime <= 0){
-                car.Die();
-            }
+            car.Die();
         }
         
     }

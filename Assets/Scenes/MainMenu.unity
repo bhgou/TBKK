@@ -2105,7 +2105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rayPos: {fileID: 0}
-  _stopPoint: {fileID: 0}
   _moving: 0
 --- !u!1 &1245295181
 GameObject:
@@ -2465,19 +2464,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2bba736058bf38498fc2639111e41ee, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.11024022
+      value: -0.1102402
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2bba736058bf38498fc2639111e41ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.01
+      value: 0.43
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2bba736058bf38498fc2639111e41ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.64
+      value: 1.17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2bba736058bf38498fc2639111e41ee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.19
+      value: -0.72
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2bba736058bf38498fc2639111e41ee, type: 3}
       propertyPath: m_LocalRotation.w
