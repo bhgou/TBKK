@@ -11,6 +11,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Start()
     {
+        _point.position = transform.position;
         _animation = GetComponent<Animator>();
     }
 
@@ -18,7 +19,7 @@ public class PlayerMove : MonoBehaviour
     {
         transform.position = Vector3.Lerp(transform.position,
             new Vector3(_point.position.x, transform.position.y, _point.position.z), Time.deltaTime * _speed);
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             _animation.Play("PlayerWalk");
             _point.transform.position = transform.position + _input;
