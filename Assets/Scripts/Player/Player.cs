@@ -6,24 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-   [SerializeField] private GameObject _panel;
-   [SerializeField] private Rigidbody[] _root;
 
+   [SerializeField] private List<Item> _items;
    private void Start()
    {
-      foreach (var root in _root)
+      foreach (var item in _items)
       {
-         root.isKinematic = true;
+         InventoryManager._instance.AddItem(item);
       }
    }
 
    public void Die()
    {
-      _panel.SetActive(true);
-      foreach (var root in _root)
-      {
-         root.isKinematic = false;
-      }
-      
+      Debug.Log("Die");      
    }
 }
