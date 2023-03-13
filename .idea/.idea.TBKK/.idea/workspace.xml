@@ -7,9 +7,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/08ea823645ac4a518a68e458cdb975b413d000/98/3d33b476/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+=======
+>>>>>>> parent of f7cd210e (InventoryV1)
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -90,6 +93,7 @@
       <workItem from="1677753633388" duration="2161000" />
       <workItem from="1677874727809" duration="1213000" />
       <workItem from="1678034100533" duration="14000" />
+<<<<<<< HEAD
       <workItem from="1678220797571" duration="2805000" />
       <workItem from="1678269486491" duration="704000" />
       <workItem from="1678379744212" duration="1201000" />
@@ -99,6 +103,8 @@
       <workItem from="1678652781157" duration="2859000" />
 =======
 >>>>>>> parent of 884f2c92 (secondLevel1)
+=======
+>>>>>>> parent of f7cd210e (InventoryV1)
     </task>
     <servers />
   </component>
