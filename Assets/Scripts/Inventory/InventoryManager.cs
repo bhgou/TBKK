@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-  
+
 
    public static InventoryManager _instance = null;
    
@@ -25,7 +25,6 @@ public class InventoryManager : MonoBehaviour
       }
       
       DontDestroyOnLoad(gameObject);
-
    }
 
 

@@ -9,8 +9,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/08ea823645ac4a518a68e458cdb975b413d000/98/3d33b476/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment/Turnstile.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UseWithObject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -95,9 +93,12 @@
       <workItem from="1678220797571" duration="2805000" />
       <workItem from="1678269486491" duration="704000" />
       <workItem from="1678379744212" duration="1201000" />
+<<<<<<< HEAD
       <workItem from="1678385083353" duration="1666000" />
       <workItem from="1678541806484" duration="1227000" />
       <workItem from="1678652781157" duration="2859000" />
+=======
+>>>>>>> parent of 884f2c92 (secondLevel1)
     </task>
     <servers />
   </component>

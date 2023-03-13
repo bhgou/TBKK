@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+<<<<<<< HEAD
    private PlayerMove _playerMove;
    private bool _moving = true;
    
@@ -13,15 +14,22 @@ public class Player : MonoBehaviour
    {
       set => _moving = value;
    }
+=======
+   [SerializeField] private GameObject _panel;
+   [SerializeField] private Rigidbody[] _root;
+>>>>>>> parent of 884f2c92 (secondLevel1)
 
-   [SerializeField] private List<Item> _items;
    private void Start()
    {
+<<<<<<< HEAD
       _playerMove = GetComponent<PlayerMove>(); 
       
       foreach (var item in _items)
+=======
+      foreach (var root in _root)
+>>>>>>> parent of 884f2c92 (secondLevel1)
       {
-         InventoryManager._instance.AddItem(item);
+         root.isKinematic = true;
       }
    }
 
@@ -39,6 +47,11 @@ public class Player : MonoBehaviour
 
    public void Die()
    {
-      Debug.Log("Die");      
+      _panel.SetActive(true);
+      foreach (var root in _root)
+      {
+         root.isKinematic = false;
+      }
+      
    }
 }
