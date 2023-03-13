@@ -1,14 +1,15 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class UseWithObject : MonoBehaviour
 {
+    public static Action _onUsed;
+    
     private void OnTriggerStay(Collider other)
     {
         if (other.TryGetComponent(out Outline outline))
         {
+            _onUsed?.Invoke();
             outline.enabled = true;
         }
     }
@@ -20,8 +21,4 @@ public class UseWithObject : MonoBehaviour
         }
     }
 
-    protected void Use()
-    {
-        
-    }
 }

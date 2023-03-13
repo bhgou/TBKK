@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Cell : MonoBehaviour
 {
-    private Item _item;
+    [SerializeField] private Item _item;
 
     public Item Item
     {

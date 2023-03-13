@@ -43,6 +43,26 @@ public class InventoryManager : MonoBehaviour
 
    }
 
+   public bool CheckItems(int id)
+   {
+      var haveItem = false;
+      
+      foreach (var cell in _cells)
+      {
+         if(cell.Item != null){
+            if (cell.Item.Id == id)
+            {
+               haveItem = true;
+            }
+            else
+            {
+               haveItem = false;
+            }
+            
+         }
+      }
+      return haveItem;
+   }
    public void RemoveItem(Item item)
    {
       _cells[_indexCell].Item = null;
