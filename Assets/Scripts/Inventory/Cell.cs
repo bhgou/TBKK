@@ -1,6 +1,3 @@
-
-using System;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -60,9 +57,9 @@ public class Cell : MonoBehaviour
             {
                 if (Physics.Raycast(ray, out RaycastHit hit))
                 {
-                    if (hit.collider.gameObject.TryGetComponent(out Turnstile turnstile))
+                    if (hit.collider.gameObject.TryGetComponent(out UseItemInventoryObject inventoryObject))
                     {
-                        turnstile.Use();
+                        inventoryObject.Use();
                     }
                 }
                 
@@ -71,11 +68,19 @@ public class Cell : MonoBehaviour
                 _player.Moving = true;
             }
         }
+        if(Item == null){
+            _draging = false;
+        }
+        if(!_draging){
+            transform.position = _startPosition;
+        }
     }
     
     public void MoveToMouse()
     {
+        InventoryManager._instance.ChooseItem = Item;
         _draging = true;
+
     }
     
 

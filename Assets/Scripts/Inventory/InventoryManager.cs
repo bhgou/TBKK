@@ -12,7 +12,12 @@ public class InventoryManager : MonoBehaviour
    
    [SerializeField] private Cell[] _cells;
    private int _indexCell = -1;
-
+   private Item _chooseItem;
+   public Item ChooseItem
+   {
+      set => _chooseItem = value;
+      get => _chooseItem;
+   }
    private void Start()
    {
       if (_instance == null)
@@ -43,7 +48,7 @@ public class InventoryManager : MonoBehaviour
 
    }
 
-   public bool CheckItems(int id)
+   public bool CheckItemsInInvetory(int id)
    {
       var haveItem = false;
       
@@ -53,20 +58,33 @@ public class InventoryManager : MonoBehaviour
             if (cell.Item.Id == id)
             {
                haveItem = true;
+               break;
             }
-            else
-            {
+            else{
                haveItem = false;
-            }
-            
+            }            
          }
       }
       return haveItem;
    }
-   public void RemoveItem(Item item)
+   public bool ChooseItemIsPick(int id){
+      if (InventoryManager._instance.ChooseItem.Id == id)
+      {
+         return true;
+      }
+      else{
+         return false;
+      }
+   }
+  
+
+   public void RemoveItem(int id)
    {
-      _cells[_indexCell].Item = null;
-      _indexCell--;
+      foreach(Cell cell in _cells){
+         if(cell.Item.Id == id){
+            cell.Item = null;
+         }
+      }
    }
 
 }

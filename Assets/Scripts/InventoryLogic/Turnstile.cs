@@ -1,18 +1,19 @@
 using System;
 using UnityEngine;
 
-public class Turnstile : MonoBehaviour
+public class Turnstile : UseItemInventoryObject
 {
+    [SerializeField] private int id;
     private Player _player;
     [SerializeField] private GameObject _turnstileMenu;
     private void Start()
     {
         _player = (Player)FindObjectOfType(typeof(Player));
     }
-
-    public void Use()
+    
+    public override void Use()
     {
-        if (InventoryManager._instance.CheckItems(0))
+        if (InventoryManager._instance.ChooseItemIsPick(id))
         {
             _turnstileMenu.SetActive(true);
         }
