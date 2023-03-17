@@ -3,13 +3,23 @@ using UnityEngine;
 
 public class UseWithObject : MonoBehaviour
 {
-    public static Action _onUsed;
+    private Player _player;
     
+    private void Start()
+    {
+        _player = (Player)FindObjectOfType(typeof(Player));
+    }
+
+    private void Update()
+    {
+       
+    }
+
     private void OnTriggerStay(Collider other)
     {
         if (other.TryGetComponent(out Outline outline))
         {
-            _onUsed?.Invoke();
+            _player.Moving = false;
             outline.enabled = true;
         }
     }
